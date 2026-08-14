@@ -1,0 +1,13 @@
+{
+  "name": "demo-08-xxe",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Intentionally vulnerable app: XML External Entity Injection (CWE-611)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

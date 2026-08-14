@@ -1,0 +1,1 @@
+Welcome to the docs folder. This file is meant to be publicly readable via /files?name=welcome.txt.

@@ -1,0 +1,14 @@
+{
+  "name": "demo-09-insecure-deserialization",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Intentionally vulnerable app: Insecure Deserialization (CWE-502)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cookie-parser": "^1.4.6"
+  }
+}

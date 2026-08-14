@@ -1,0 +1,14 @@
+{
+  "name": "demo-01-sql-injection",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Intentionally vulnerable app: SQL Injection (CWE-89)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "sql.js": "^1.11.0"
+  }
+}

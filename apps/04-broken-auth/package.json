@@ -1,0 +1,14 @@
+{
+  "name": "demo-04-broken-auth",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Intentionally vulnerable app: Broken Authentication (CWE-307 / CWE-330)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cookie-parser": "^1.4.6"
+  }
+}

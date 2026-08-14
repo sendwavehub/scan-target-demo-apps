@@ -1,0 +1,11 @@
+{
+  "name": "scan-target-demo-apps",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ten intentionally vulnerable Node/Express demo apps used as scanner test targets. Authorized testing use only.",
+  "scripts": {
+    "install:all": "node scripts/install-all.js",
+    "start:all": "node start-all.js"
+  },
+  "license": "UNLICENSED"
+}

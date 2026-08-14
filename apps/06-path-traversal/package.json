@@ -1,0 +1,13 @@
+{
+  "name": "demo-06-path-traversal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Intentionally vulnerable app: Path Traversal (CWE-22)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

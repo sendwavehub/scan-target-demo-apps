@@ -1,0 +1,13 @@
+{
+  "name": "demo-05-command-injection",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Intentionally vulnerable app: OS Command Injection (CWE-78)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
