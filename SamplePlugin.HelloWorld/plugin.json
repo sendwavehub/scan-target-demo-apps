@@ -1,0 +1,9 @@
+{
+  "id": "com.aisecstudio.samples.helloworld",
+  "name": "Hello World Sample Plugin",
+  "version": "1.0.0",
+  "hostApiVersion": ">=1.0.0",
+  "entryAssembly": "SamplePlugin.HelloWorld.dll",
+  "entryType": "SamplePlugin.HelloWorld.HelloWorldPlugin",
+  "dependencies": []
+}

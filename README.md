@@ -40,6 +40,16 @@ Each app folder has its own `README.md` describing the vulnerable endpoint,
 an example payload that triggers it, and what the "fixed" version would look
 like conceptually (without actually fixing it here).
 
+## Additional samples
+
+Three more targets, each a different kind of test fixture:
+
+| Sample | What it is |
+|---|---|
+| [vulnerable-shop](vulnerable-shop) | A static, cross-language (C#/Python/JS) source tree with planted issues — a SAST/static-analysis scan target, not a runnable app. |
+| [exploit-chain-demo](exploit-chain-demo) | A runnable Node/Express server with a live, 4-stage exploit chain (JWT forgery → IDOR → privilege pivot → RCE) on ports 4000/4001, plus a weaponized PoC exploit. See its own README before running. |
+| [SamplePlugin.HelloWorld](SamplePlugin.HelloWorld) | A minimal C# analyzer plugin example — not a vulnerable target, just a reference for the plugin interface shape. |
+
 ## Quick start
 
 Requires Node.js 18+ (built-in `fetch` is used by the SSRF demo).

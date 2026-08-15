@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    A minimal reference plugin used as an integration-test fixture.
+    It references only the Abstractions contract, exactly as a real plugin would,
+    and the contract is NOT copied to the output (Private=false) so the loader
+    resolves it back to the host's single instance.
+  -->
+  <PropertyGroup>
+    <RootNamespace>SamplePlugin.HelloWorld</RootNamespace>
+    <AssemblyName>SamplePlugin.HelloWorld</AssemblyName>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../../src/AiSecStudio.Plugins.Abstractions/AiSecStudio.Plugins.Abstractions.csproj">
+      <Private>false</Private>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </ProjectReference>
+    <!-- The analyzer-contribution contract, also resolved to the host's copy across the load boundary. -->
+    <ProjectReference Include="../../src/AiSecStudio.Analysis.Abstractions/AiSecStudio.Analysis.Abstractions.csproj">
+      <Private>false</Private>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="plugin.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

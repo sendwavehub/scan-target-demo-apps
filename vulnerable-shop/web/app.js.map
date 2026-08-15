@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "file": "app.js",
+  "sources": ["webpack:///src/internal/payments/stripeConfig.ts"],
+  "sourcesContent": ["export const STRIPE_SECRET = 'FAKE_DEMO_STRIPE_KEY_NOT_A_REAL_SECRET_0123456789';\nexport const INTERNAL_ADMIN_PATH = '/internal/admin/reconcile';\n"],
+  "mappings": "AAAA,OAAO,MAAM,cAAc,GAAG,uCAAuC"
+}
